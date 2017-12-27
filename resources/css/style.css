@@ -1,0 +1,117 @@
+
+/* Fonts */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v3/ElUAY9q6T0Ayx4zWzW63VJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Work Sans SemiBold'), local('WorkSans-SemiBold'), url(https://fonts.gstatic.com/s/worksans/v3/z9rX03Xuz9ZNHTMg1_ghGRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* Base Styles */
+html {
+  font-size: 16px;
+  font-family: "Work Sans";
+}
+
+body {
+  line-height: 1.4em;
+}
+
+div {
+  display: block;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+header a:hover {
+  color: #B2B7BA;
+}
+
+header a {
+  transition: color .3s;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0 1.5rem;
+  font-size: 1.5rem;
+  color: #8C898B;
+}
+
+strong {
+  font-weight: 600;
+  color: #302F30;
+}
+
+/* Nav Section */
+nav {
+  margin: 0 .5rem;
+}
+
+nav span {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav span a {
+  color: #302F30;
+  text-decoration: none;
+}
+
+
+/* Phone Container Styling */
+.phone-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.phone-container img {
+  padding: 0 1.5rem;
+}
+
+
+
+/* Media Specific Styling */
+@media only screen and (min-width: 481px) and (max-width: 700px) {
+  nav {
+    font-size: .8rem;
+    margin-left: 0;
+  }
+  .logo {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 561px) {
+.phone-container {
+  display: none;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 560px) {
+ .logo, nav {
+  display: none;
+  }
+}
