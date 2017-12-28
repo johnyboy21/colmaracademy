@@ -53,10 +53,6 @@ header a:hover {
   color: #B2B7BA;
 }
 
-header a:visited {
-  color: #6681CC;
-}
-
 header a {
   transition: color .3s;
 }
