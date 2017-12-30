@@ -269,6 +269,7 @@ nav span a {
   padding: 2rem 0 1rem;
 }
 
+/* Learning Courses Section */
 .courses {
   display: flex;
   flex-wrap: wrap;
@@ -296,6 +297,7 @@ nav span a {
   height: auto;
 }
 
+/* Learning Courses Text Section */
 .course-txt {
   padding: 1rem 1rem 1.5rem 1rem;
 }
@@ -305,22 +307,97 @@ nav span a {
   font-weight: 600;
 }
 
+.course-txt p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
 .course-txt h4 {
   padding: .5rem 0;
   color: #E8EEF2;
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 300;
+  transition: all .3s;
 }
 
 .course-txt a {
   text-decoration: none;
 }
 
+.course-txt h4:hover {
+  text-decoration: underline;
+} /* End Learning Courses Section */
 
+/* Thesis Section */
+.thesis-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 2rem 0 .5rem;
+}
 
+.thesis {
+  max-width: 100%;
+  display: flex;
+}
 
+.thesis-vid {
+  max-width: 60%;
+  margin: 1.5rem;
+}
 
+.thesis-txt h1 {
+  text-align: left;
+  font-size: 2rem;
+}
+
+.thesis-txt p {
+  padding: .5rem 0 .5rem;
+  font-weight: 300;
+}
+
+.thesis .main-supporting {
+  border-left: none;
+}
+
+video {
+  object-fit: contain;
+  height: auto;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid lightgrey;
+  padding: 1rem 1.5rem;
+  background-color: #939EA1;
+}
+
+footer .content {
+  display: flex;
+  font-weight: 300;
+  font-size: .85rem;
+  color: #E8EEF2;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+footer .terms {
+  padding-right: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #E8EEF2;
+  transition: all 0.3s;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #364552;
+}
 
 /* Media Specific Styling */
 @media only screen and (min-width: 481px) and (max-width: 700px) {
